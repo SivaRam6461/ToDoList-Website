@@ -1,0 +1,178 @@
+/* 🌟 Import Stylish Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(135deg, #667eea, #764ba2); */
+  /* background: linear-gradient(to right, #141e30, #243b55); */
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  /* background: linear-gradient(135deg, #232526, #4a7351); */
+  background: linear-gradient(135deg, #163d1e, #29312a);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+/* 📌 Main Container */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* 🌙 Dark Mode Button */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+  color: #333;
+}
+
+/* 🔹 Input Section */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+}
+
+.todo-input button {
+  padding: 12px 18px;
+  font-size: 16px;
+  /* background: #667eea; */
+  background: #62906a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-input button:hover {
+  /* background: #5a67d8; */
+  background: #46654a;
+}
+
+/* 📌 Task Sections */
+.task-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.task-list,
+.completed-list {
+  flex: 1;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ✅ Completed Task Styling */
+.completed-list li {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* 🔹 Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+li {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #f0f0f0;
+}
+
+/* ✅ Complete Button */
+.complete-btn {
+  /* background: #2ecc71; */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background: #27ae60;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  /* background: #e74c3c; */
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #141e30, #41546a);
+  /* color: white; */
+}
+.dark-mode .container .todo-input button {
+  background: #667eea;
+}
+
+/* .dark-mode .container {
+  background: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .task-list,
+.dark-mode .completed-list {
+  background: #333;
+  border: 1px solid #444;
+}
+
+.dark-mode .todo-input input {
+  background: #444;
+  color: white;
+  border: 1px solid #555;
+} */
